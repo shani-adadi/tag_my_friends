@@ -3,7 +3,14 @@ import cv2
 
 class FolderHandler:
     def __init__(self):
-        pass
+        self.create_friends_folder()
+
+    def create_friends_folder(self):
+        """
+        Creates friends folder
+        """
+        if not os.path.isdir('./friends'):
+            os.mkdir('./friends')
 
     def create_folder(self, folder_name):
         """
