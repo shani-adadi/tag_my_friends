@@ -19,7 +19,7 @@ def detect_face_train(img, subject_name, index):
     if len(faces) == 0:
         return None, None
     if len(faces) > 1:
-        raise RuntimeError('There is more then one face in photo number {0} in {1} photos'.format(index,subject_name))
+        return None, None
     (x, y, w, h) = faces[0]
     # return only the face part of the image
     return gray[y:y + w, x:x + h], faces[0]
@@ -96,7 +96,11 @@ def get_labeled_photos(path, face_recognizer, labels_dict):
     photos = prepare_data.get_photos(path)
     for photo in photos:
         labels = find_friend_in_image(photo, face_recognizer)
+        written_labels = []
         for label in labels:
+            if label[0] in written_labels:
+                continue
+            written_labels.append(label[0])
             name = labels_dict[label[0]]
             if name not in photos_dict.keys():
                 photos_dict[name] = []

@@ -46,13 +46,17 @@ def get_faces_list(train_data_dict):
     :return: dict in which the key is the subject name and the value is his faces photos list
     """
     train_faces_dict = {}
+    none_photos = []
     for name, photos in train_data_dict.items():
         train_faces_dict[name] = []
         for index, photo in enumerate(photos):
             face, rect = face_recognition.detect_face_train(photo, name, index + 1)
             if face is not None:
                 train_faces_dict[name].append(face)
-    return train_faces_dict
+            else:
+                text = "Photo number {0} of {1} was't good!".format(index + 1, name)
+                none_photos.append(text)
+    return none_photos, train_faces_dict
 
 if __name__ == '__main__':
     x = get_subjects_names_and_photos('friends')

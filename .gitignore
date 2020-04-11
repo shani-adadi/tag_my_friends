@@ -1,0 +1,5 @@
+dist/
+.idea/
+.eggs/
+__pycache__/
+build/
