@@ -8,7 +8,7 @@ Usage:
 from setuptools import setup
 
 APP = ['main.py']
-DATA_FILES = []
+DATA_FILES = ['beach-background-with-sunglasses-starfish_1101-313.jpg', 'image_handler.qrc']
 OPTIONS = {}
 
 setup(

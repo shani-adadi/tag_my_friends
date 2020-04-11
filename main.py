@@ -236,7 +236,7 @@ class Ui_MainWindow(QObject):
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#35408c;\">3. Choose the folder in which you have the photos you want the share</span></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#35408c;\">4. Finally, press let\'s do it! give it a few moments and don\'t worry, the system will create on the photos folder new folders to each friend with his photos</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.Main.setText(_translate("MainWindow", "<html><head/><body><p><img src=\"./background/beach-background-with-sunglasses-starfish_1101-313.jpg\"/></p></body></html>"))
+        self.Main.setText(_translate("MainWindow", "<html><head/><body><p><img src=\"./beach-background-with-sunglasses-starfish_1101-313.jpg\"/></p></body></html>"))
         self.photos_file_path.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:18pt; font-weight:600; color:#eee709; vertical-align:sub;\">Where are all the photos?</span></p><p><br/></p></body></html>"))
         self.upload_photo_tag.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:18pt; font-weight:600; color:#eee709; vertical-align:sub;\">Upload 5+ friends test photos</span></p></body></html>"))
         self.browse_photo.setText(_translate("MainWindow", "Browse"))
