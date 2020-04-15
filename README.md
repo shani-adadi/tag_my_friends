@@ -5,7 +5,7 @@ The user uploads to the system, using a user-friendly UI, photos of friends and 
 Then, the system learning using OpenCV libraries the friend's faces and put the friend's photos in a new folder in the original photos folder.
 
 ## Getting Started:
-Just install the requirements using `pip install -r requirements.txt` and run `python TagMyFriends.py`
+Just install the requirements using `pip install -r requirements.txt` and run `python TagMyFriends.py` from src folder.
 
 ## Important Notes:
 The face recognition algorithm is an open-source algorithm which needs profile photos for learning.
